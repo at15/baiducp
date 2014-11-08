@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>百度一下,也不知道</title>
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
 </head>
 <body>
 <div id="bkg">
-    <img src="assets/images/bkg.jpg" alt=""/>
+    <img src="assets/images/bkg1.jpg" alt=""/>
 </div>
 <div class="nav">
     <ul>
@@ -23,13 +24,19 @@
         <img src="assets/images/bd_logo_white.png" alt=""/>
     </div>
     <div class="form-con">
-        <form action="http://www.baidu.com/baidu" method="get" target="_blank">
+        <form id="bd-form" action="http://www.baidu.com/baidu" method="get" target="_blank">
             <input name=tn type=hidden value=baidu>
-            <input class="search-word" type="text" name="word" size=30/>
-            <input class="search-btn" type="submit" value="百度一下"/>
+            <input class="search-word" type="text" name="word" size=30 autocomplete="off"/>
+
+            <div class="search-btn" onclick="submit()"><i class="fa fa-search"></i></div>
         </form>
     </div>
-
 </div>
+<div id="footer" class="clr">
+    ©2014 Baidu <a href="http://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+    <span>京ICP证030173号</span>
+    <img src="http://su.bdimg.com/static/superplus/img/copy_rignt_24.png">
+</div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

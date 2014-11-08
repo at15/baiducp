@@ -1,3 +1,4 @@
+/*移除默认样式*/
 ul,
 ul > li {
     list-style: none;
@@ -8,6 +9,17 @@ ul > li {
     margin: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
+.clr{
+    clear: both;
+}
+
+body{
+    font-family: 'Microsoft YaHei';
+}
 #bkg {
     position: fixed;
     bottom: 0;
@@ -25,8 +37,12 @@ ul > li {
 }
 
 .nav {
-    float: right;
-    margin-right: 30px;
+    width: 100%;
+    height: 40px;
+}
+
+.nav > ul {
+
 }
 
 .search {
@@ -49,26 +65,54 @@ ul > li {
 
 .form-con > form {
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.7;
+    height: 40px;
 }
 
 .form-con .search-word {
-    width: 75%;
+    float: left;
+
+    width: 84%;
     height: 25px;
+
+    margin: 5px 0 5px 10px;
+    padding: 4px 0 4px 0; /* 为了保证光标高度不变化  http://blog.csdn.net/luochao_tj/article/details/17755457 */
     line-height: 25px;
-    font-size: 16px;
+    font-size: 17px;
+
+    border: none;
+    outline: medium; /*解决输入的时候还是会有边框*/
 }
 
 .form-con .search-btn {
-    margin-left: -8px;
+    float: left;
 
-    width: 20%;
-    height: 32px;
+    margin: 3px 0 0 0;
+    padding: 4px 0 4px 0;
+    width: 70px;
+    height: 26px;
 
+    font-size:18px;
+    text-align: center;
+
+    background-color: #24cbf9;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#footer,
+#footer a{
     color: white;
+}
 
-    font-size: 15px;
-    letter-spacing: 1px;
-    background: #3385ff;
-    border: none;
+#footer{
+    position: absolute;
+    left: 0;
+    bottom:180px;
+
+    width: 100%;
+    text-align: center;
 }

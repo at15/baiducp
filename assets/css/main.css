@@ -1,0 +1,180 @@
+/*移除默认样式*/
+ul,
+ul > li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul > li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+.under-line {
+    text-decoration: underline;
+}
+
+.clr {
+    clear: both;
+}
+
+body {
+    font-family: 'Microsoft YaHei';
+}
+
+#bkg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+}
+
+#bkg > img {
+    width: 100%;
+    height: auto;
+}
+
+.nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+
+    background-color: #f0f0f0;
+
+    opacity: 0.9;
+}
+
+.nav > ul {
+    float: left;
+
+    height: 100%;
+}
+
+.nav > ul > li {
+    padding: 0 20px 0 20px;
+    height: 100%;
+
+    border: solid #c1c1c1;
+    border-width: 0 1px 0 0;
+}
+
+.nav > ul > li > a {
+    color: #4c4c4c;
+}
+
+.nav > ul > li > a > img {
+    width: auto;
+    height: 80%;
+
+    padding-top: 10%;
+}
+
+.nav > .more-product {
+    width: 100px;
+    text-align: center;
+
+    background-color: #24cbf9;
+    color: #ffffff;
+}
+
+.search {
+    width: 100%;
+    margin: 120px 0 0 0;
+}
+
+.logo {
+    width: 20%;
+    margin: 20px auto auto auto;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+.form-con {
+    width: 50%;
+    margin: 20px auto auto auto;
+}
+
+.form-con > form {
+    position: relative;
+
+    height: 40px;
+
+    background-color: #ffffff;
+    opacity: 0.85;
+}
+
+.form-con .search-word {
+    float: left;
+
+    width: 84%;
+    height: 25px;
+
+    margin: 5px 0 5px 10px;
+    padding: 4px 0 4px 0; /* 为了保证光标高度不变化  http://blog.csdn.net/luochao_tj/article/details/17755457 */
+    line-height: 25px;
+    font-size: 17px;
+
+    border: none;
+    outline: medium; /*解决输入的时候还是会有边框*/
+}
+
+.form-con .search-btn {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+
+    padding: 4px 0 4px 0;
+    width: 70px;
+    height: 26px;
+
+    font-size: 18px;
+    text-align: center;
+
+    background-color: #24cbf9;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+#footer,
+#footer a {
+    color: white;
+}
+
+#footer {
+    position: absolute;
+    left: 0;
+    bottom: 160px;
+
+    width: 100%;
+    text-align: center;
+}
+
+#footer > div {
+    margin-bottom: 5px;
+}
+
+#footer > div > ul {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}

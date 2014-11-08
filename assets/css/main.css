@@ -52,8 +52,15 @@ body {
     opacity: 0.9;
 }
 
+.nav > ul {
+    float: left;
+
+    height: 100%;
+}
+
 .nav > ul > li {
     padding: 0 10px 0 10px;
+    height: 100%;
 
     border: solid #c1c1c1;
     border-width: 0 1px 0 0;
@@ -61,6 +68,13 @@ body {
 
 .nav > ul > li > a {
     color: #4c4c4c;
+}
+
+.nav > ul > li > a > img {
+    width: auto;
+    height: 80%;
+
+    padding-top:10%;
 }
 
 .nav > .more-product {

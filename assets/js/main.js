@@ -15,7 +15,7 @@ function submit() {
 
 // change bkg randomly
 function changeBkg(){
-    var amount = 8;
+    var amount = 7;
     var r = Math.floor(Math.random()*amount);
     var bkgSrc = 'assets/images/bkg' + r + '.jpg';
     document.getElementById('bkg-img').setAttribute('src',bkgSrc);

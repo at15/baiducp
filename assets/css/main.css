@@ -44,17 +44,17 @@ body {
 
 .nav {
     position: absolute;
-    left: 20%;
-    top: 20px;
+    left: 0%;
+    top: 0px;
 
-    width: 60%;
+    width: 100%;
     height: 50px;
     line-height: 50px;
     font-size: 18px;
 
     background-color: #f0f0f0;
 
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .nav > ul {
@@ -112,22 +112,22 @@ body {
 .form-con > form {
     position: relative;
 
-    height: 50px;
+    height: 55px;
 
     background-color: #ffffff;
-    opacity: 0.85;
+    opacity: 0.95;
 }
 
 .form-con .search-word {
     float: left;
 
-    width: 84%;
+    width: 85%;
     height: 34px;
 
     margin: 0 0 0 10px;
     padding: 8px 0 8px 0; /* 为了保证光标高度不变化  http://blog.csdn.net/luochao_tj/article/details/17755457 */
     /*line-height: 34px;*//* chrome 下不设置line-height就可以自动居中*/
-    font-size: 17px;
+    font-size: 25px;
 
     /*background-color: yellow;*/
 
